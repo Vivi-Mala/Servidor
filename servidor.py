@@ -7,5 +7,5 @@ simulada base_datos = {     "usuarios": [         {"id": 1, "nombre": "Juan"},  
 @app.route('/usuarios', methods=['GET']) def obtener_usuarios():    
 return jsonify(base_datos["usuarios"])  
 # Devuelve la lista de usuarios en formato 
-JSON  if __name__ == '__main__':     app.run(port=5000)  
-# Ejecuta el servidor en el puerto 5000 
+JSON  if __name__ == '__main__':     
+app.run(port=5000)  # Ejecuta el servidor en el puerto 5000 
